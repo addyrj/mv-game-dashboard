@@ -1,0 +1,95 @@
+.inbox-dg-i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.inBox_div {
+   width: 800px;
+   height: 750px;
+   position: relative;
+   transition: all 0.4s ease;
+   overflow: hidden;
+}
+
+@media (max-height: 950px) {
+   .inBox_div {
+      width: 700px;
+   }
+}
+@media (max-height: 900px) {
+   .inBox_div {
+      width: 650px;
+      height: 700px;
+   }
+}
+
+.sm_box_div {
+   width: 500px;
+   height: 650px;
+}
+
+.privacy_inbox_div {
+   width: 500px;
+   height: 650px;
+   position: absolute;
+   position: absolute;
+   right: -500px;
+   top: 0;
+   z-index: 800;
+   background-color: var(--smooth-gray-sl-cl);
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease;
+}
+
+.sm_box_div .privacy_inbox_div {
+   visibility: visible;
+   opacity: 1;
+}
+
+@media (max-height: 800px) {
+   .inBox_div {
+      height: 600px;
+   }
+}
+
+@media (max-width: 800px) {
+   .sm_box_div {
+      width: 95%;
+   }
+   .inBox_div {
+      width: 95%;
+      height: 600px;
+   }
+   .privacy_inbox_div {
+      width: 100%;
+   }
+}
+
+@media (max-width: 800px) {
+   .inBox_div {
+      height: 600px;
+   }
+}
+
+@media (max-height: 600px) {
+   .inBox_div {
+      height: 500px;
+   }
+}
+@media (max-height: 550px) {
+   .inBox_div {
+      height: 480px;
+   }
+}
+@media (max-height: 500px) {
+   .inBox_div {
+      height: 420px;
+   }
+}

@@ -1,0 +1,32 @@
+{
+   "name": "bc.games-development",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "server": "npm run dev --prefix server",
+      "server-pm2": "npm run pm2-start --prefix server",
+      "client": "npm start --prefix client",
+      "client-dev": "npm run dev --prefix client",
+      "server-dep": "npm install --prefix server",
+      "client-dep": "npm install --prefix client",
+      "client-build": "npm run build --prefix client",
+      "client-dep-uninstall": "npm uninstall --prefix client",
+      "server-dep-uninstall": "npm uninstall --prefix server",
+      "watch": "npm run server & npm run client",
+      "pm2-server": "npm run server-pm2",
+      "pm2-server-max": "npm run pm2-server-max --prefix server",
+      "rm-build": "npm run rm-build --prefix server"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dheeraj1429/bs-games.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/dheeraj1429/bs-games/issues"
+   },
+   "homepage": "https://github.com/dheeraj1429/bs-games#readme"
+}
